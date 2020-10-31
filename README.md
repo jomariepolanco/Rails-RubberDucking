@@ -6,33 +6,57 @@ Help! As more and more students enroll in Flatiron, more rubber duckys are
 needed for debugging. In order to keep track of its rubber duckys and students,
 Flatiron is asking you to create a rubber duck tracking application.
 
-Every rubber `duck` should be created with a `name` and a `description` and
-every `student` should be created with a `name` and a `mod`. And since Flatiron
-is all about love, when a duck is created, it needs to be created with a
-student. After all, a duck should never be without an owner! Consider how you
-would handle this in the seed file. (Hint: Consider using the `sample` method)
-Make sure you handle your migrations appropriately!
+<!-- - Every rubber `duck` should be created with a `name` and a `description`
+- when a duck is created, it needs to be created with a student. After all, a duck should never be without an owner! 
+  <!-- - name:string
+  - description:string -->
+  <!-- -student_id:integer -->
+
+<!-- - andevery `student` should be created with a `name` and a `mod`. And since Flatiron
+is all about love, 
+  - name:string
+  - mod:integer -->
+  
+<!-- - Consider how you would handle this in the seed file. (Hint: Consider using the `sample` method)
+Make sure you handle your migrations appropriately! -->
 
 With this website, a user should be:
 
-* Able to see a list of all the students
+<!-- * Able to see a list of all the students
+  - student#index -->
 
 * Able to see a single student and all the ducks owned by that student
+  - student#show
 
 * Able to log a new student (and make sure that their name is not blank/mod is
   between 1 and 5)
+    - student#new/create
+    - validation name is present
+    - validation mod integer betwen 1 and 5
 
 * Able to edit a student's name (and make sure that their name is not blank/mod
   is between 1 and 5)
+    - student#edit/update
+    -validations see above
 
 * Able to see a list of all the ducks
+  - duck#index
 
 * Able to see a single duck and see all its details
+  -duck#show
 
 * Able to edit a duck and its details
+  - duck#edit/update
 
 * Able to create a new duck with an association to a student (and make sure that
   their name and type are not blank)
+  - duck#new/create
+  -validation name and type present
+  -collection_select on students
 
 Some of the models and resources have already been provided for you. Make the
 necessary edits and alterations to make the website function as expected.
+
+<!-- Associations-
+Duck belongs to student
+a student has many ducks -->

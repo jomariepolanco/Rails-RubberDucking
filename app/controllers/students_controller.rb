@@ -6,7 +6,22 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @students = Student.find(params[:id])
+    @student = Student.find(params[:id])
     render :show
+  end
+
+  def new
+    @student = Student.new 
+    render :new
+  end
+
+  def create
+    @student = Student.create(student_params)
+  end
+
+  private
+
+  def student_params
+    params.require(:student).permit(:name, :mod)
   end
 end

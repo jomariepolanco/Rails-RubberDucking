@@ -25,8 +25,8 @@ With this website, a user should be:
 <!-- * Able to see a list of all the students
   - student#index -->
 
-* Able to see a single student and all the ducks owned by that student
-  - student#show
+<!-- * Able to see a single student and all the ducks owned by that student
+  - student#show -->
 
 * Able to log a new student (and make sure that their name is not blank/mod is
   between 1 and 5)

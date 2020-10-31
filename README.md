@@ -34,10 +34,10 @@ With this website, a user should be:
     validation name is present
     validation mod integer betwen 1 and 5 -->
 
-* Able to edit a student's name (and make sure that their name is not blank/mod
+<!-- * Able to edit a student's name (and make sure that their name is not blank/mod
   is between 1 and 5)
     - student#edit/update
-    -validations see above
+    -validations see above -->
 
 * Able to see a list of all the ducks
   - duck#index

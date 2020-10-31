@@ -23,6 +23,21 @@ class DucksController < ApplicationController
     end
   end
 
+  def new
+    @duck = Duck.new 
+    render :new
+  end
+
+  def create
+    @duck = Duck.create(duck_params)
+    if @duck.valid?
+      redirect_to duck_path(@duck)
+    else
+      flash[:duck_errors] = @duck.errors.full_messages
+      redirect_to new_duck_path
+    end
+  end
+
   private
 
   def duck_params

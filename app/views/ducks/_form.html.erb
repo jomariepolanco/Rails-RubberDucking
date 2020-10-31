@@ -1,4 +1,9 @@
 <%= form_for @duck do |f| %>
+    <% if flash[:duck_errors] %>
+        <% flash[:duck_errors].each do |error| %>
+            <p><%= error %></p>
+        <% end %>
+    <% end %>
     <%= f.label :name %><br>
     <%= f.text_field :name %><br>
 

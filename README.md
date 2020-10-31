@@ -48,11 +48,11 @@ With this website, a user should be:
 <!-- * Able to edit a duck and its details
   - duck#edit/update -->
 
-* Able to create a new duck with an association to a student (and make sure that
-  their name and type are not blank)
-  - duck#new/create
-  -validation name and type present
-  -collection_select on students
+<!-- * Able to create a new duck with an association to a student (and make sure that
+  their name and type are not blank) -->
+  <!-- - duck#new/create -->
+  <!-- -validation name and type present -->
+  <!-- -collection_select on students -->
 
 Some of the models and resources have already been provided for you. Make the
 necessary edits and alterations to make the website function as expected.

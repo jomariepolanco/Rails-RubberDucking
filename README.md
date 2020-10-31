@@ -45,8 +45,8 @@ With this website, a user should be:
 <!-- * Able to see a single duck and see all its details
   -duck#show -->
 
-* Able to edit a duck and its details
-  - duck#edit/update
+<!-- * Able to edit a duck and its details
+  - duck#edit/update -->
 
 * Able to create a new duck with an association to a student (and make sure that
   their name and type are not blank)

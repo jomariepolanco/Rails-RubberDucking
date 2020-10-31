@@ -39,11 +39,11 @@ With this website, a user should be:
     - student#edit/update
     -validations see above -->
 
-* Able to see a list of all the ducks
-  - duck#index
+<!-- * Able to see a list of all the ducks
+  - duck#index -->
 
-* Able to see a single duck and see all its details
-  -duck#show
+<!-- * Able to see a single duck and see all its details
+  -duck#show -->
 
 * Able to edit a duck and its details
   - duck#edit/update

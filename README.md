@@ -28,11 +28,11 @@ With this website, a user should be:
 <!-- * Able to see a single student and all the ducks owned by that student
   - student#show -->
 
-* Able to log a new student (and make sure that their name is not blank/mod is
-  between 1 and 5)
-    - student#new/create
-    - validation name is present
-    - validation mod integer betwen 1 and 5
+<!-- * Able to log a new student (and make sure that their name is not blank/mod is
+  between 1 and 5) -->
+    <!-- student#new/create
+    validation name is present
+    validation mod integer betwen 1 and 5 -->
 
 * Able to edit a student's name (and make sure that their name is not blank/mod
   is between 1 and 5)
